@@ -67,3 +67,16 @@ FlashAttention's logic has been ported across various compiler ecosystems to acc
 | [**Long-Context Transformer Pre-training**](details/long_context_pretraining.md) | Serves as the critical infrastructure engine that makes modern 128k to 1M+ token context windows feasible during base-model pre-training routines. | 2022 | [Dao et al., 2022](https://arxiv.org/abs/2205.14135) |
 | [**High-Throughput Serving Pipelines (vLLM / TensorRT-LLM)**](details/high_throughput_serving.md) | Integrated into commercial inference engines to compress Time-to-First-Token (TTFT) metrics and boost multi-user concurrent query processing speeds. | 2023 | [Kwon et al., 2023](https://arxiv.org/abs/2309.06180) |
 | [**High-Resolution Diffusion Networks**](details/high_res_diffusion.md) | Accelerates cross-attention blocks within modern image and video generators (like Sora or Stable Diffusion 3), where processing massive structural patch grids creates intense sequence length pressure. | 2022 | [Dao et al., 2022](https://arxiv.org/abs/2205.14135) |
+
+---
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Flash-Attention&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Flash-Attention&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Flash-Attention&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Flash-Attention&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
