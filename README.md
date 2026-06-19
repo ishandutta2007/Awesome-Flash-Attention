@@ -1,11 +1,30 @@
-# Awesome-Flash-Attention
-## FlashAttention: Variants, Types, & Applications
+# ⚡ Awesome Flash-Attention ⚡
 
-FlashAttention is a hardware-aware exact attention algorithm designed to accelerate Transformer training and inference. Standard attention scales quadratically ($O(N^2)$) in memory, bottlenecked by slow High Bandwidth Memory (HBM) read/write operations on GPUs. FlashAttention restructures the computation—using tiling, online softmax, and recomputation—to run entirely within fast on-chip SRAM, cutting memory usage to linear ($O(N)$) and yielding dramatic speedups without any loss in mathematical accuracy.
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Flash Attention Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Flash-Attention/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Flash-Attention?style=flat-square&color=blue" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Flash-Attention/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Flash-Attention?style=flat-square&color=gold" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Flash-Attention/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Flash-Attention?style=flat-square&color=orange" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-## 1. Algorithmic & Generational Variants
+## 📖 Introduction & Technical Overview
+
+**FlashAttention** is a hardware-aware, exact attention algorithm engineered to drastically accelerate Transformer training and inference. 
+
+Standard attention scales quadratically ($O(N^2)$) in memory, bottlenecked by slow High Bandwidth Memory (HBM) read/write operations on GPUs. FlashAttention restructures the computation—using tiling, online softmax, and recomputation—to run entirely within fast on-chip SRAM, cutting memory usage to linear ($O(N)$) and yielding dramatic speedups without any loss in mathematical accuracy.
+
+This curated list tracks the evolution, adaptations, deployments, and production use-cases of the FlashAttention paradigm.
+
+---
+
+## 🚀 1. Algorithmic & Generational Variants
 
 These core versions mark the chronological evolution of FlashAttention, with each generation introducing novel hardware-level scheduling to bypass memory bottlenecks.
 
@@ -17,7 +36,7 @@ These core versions mark the chronological evolution of FlashAttention, with eac
 
 ---
 
-## 2. Structural & Attention-Type Adapters
+## 🧩 2. Structural & Attention-Type Adapters
 
 These variants modify the baseline FlashAttention algorithm to support specialized attention patterns used across different neural network architectures.
 
@@ -29,7 +48,7 @@ These variants modify the baseline FlashAttention algorithm to support specializ
 
 ---
 
-## 3. Hardware & Framework Deployments
+## 💻 3. Hardware & Framework Deployments
 
 FlashAttention's logic has been ported across various compiler ecosystems to accelerate diverse deep learning hardware footprints.
 
@@ -41,7 +60,7 @@ FlashAttention's logic has been ported across various compiler ecosystems to acc
 
 ---
 
-## 4. Production Applications
+## 🌟 4. Production Applications
 
 | Application Area | Application | First Used (Year) | First Used (Paper) |
 | :--- | :--- | :--- | :--- |
